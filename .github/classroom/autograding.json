@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Step 1 Create a branch",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) -ge 1 ] || [ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Finish",
+      "setup": "",
+      "run": "[ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
